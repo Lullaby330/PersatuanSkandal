@@ -3,7 +3,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6652537244:AAEmO6MoAePfHI-g_fNB-H7C6RQu-BBBpRc")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6365423557:AAHtaHUGh_zdcvpAjfEaFSEr4C92cVugTSs")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "6216349"))
@@ -12,7 +12,7 @@ APP_ID = int(os.environ.get("APP_ID", "6216349"))
 API_HASH = os.environ.get("API_HASH", "5c7418e9f3df6db931caa7354521c55f")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001910115341"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002082080564"))
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "1289438071"))
@@ -21,8 +21,8 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "1289438071"))
 DB_URI = os.environ.get("DATABASE_URL", "postgres://biqyrnvv:QJhz5V8_h1Uzz6gD2HYd9ZcV3nbDCd0L@tiny.db.elephantsql.com/biqyrnvv")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001905269265"))
-FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001918432882"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001612961074"))
+FORCE_SUB_GROUP = int(os.environ.get("FORCE_SUB_GROUP", "-1001226037148"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -30,7 +30,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "6159643707 5084234580 1985010358").split()):
+    for x in (os.environ.get("ADMINS", "6499239618").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
